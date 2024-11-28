@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiva Shankar General Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome-message"></div>
+
+    <header>
+        <h1>Shiva Shankar General Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to Shiva Shankar General Store</h2>
+            <p>Serving our community with quality products since 1994</p>
+        </section>
+
+        <section class="search-section">
+            <h3>Search Our Products</h3>
+            <input type="text" id="search-input" placeholder="Enter product name...">
+            <button onclick="searchProducts()">Search</button>
+            <div id="search-results"></div>
+        </section>
+
+        <section class="calculator-section">
+            <h3>Calculate Discounted Price</h3>
+            <div class="calculator-form">
+                <input type="number" id="purchase-amount" placeholder="Enter Purchase Amount" step="0.01">
+                <p>Special Christmas Offer: 10% discount on purchases above $50</p>
+                <button onclick="calculateDiscount()">Calculate</button>
+                <div id="discount-result"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Student ID: 24314063 | Name: Reshant Nepal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
