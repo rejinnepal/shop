@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="welcome-message"></div>
+    <!-- <div id="welcome-message"></div> -->
 
     <header>
         <h1>Shiva Shankar Kirana Tatha Khadyanna Store</h1>
@@ -22,16 +22,59 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Welcome to Shiva Shankar Kirana Tatha Khadyanna Store</h2>
-            <p>Serving our community with quality products since 1994</p>
+        <div class="hero-banner">
+            <div class="hero-content">
+                <h2>Welcome to Shiva Shankar Kirana Tatha Khadyanna Store</h2>
+                <p>Serving our community with quality products since 1994</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="cta-button">View Our Products</a>
+                    <a href="contact.html" class="cta-button secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="features">
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1198/1198446.png" alt="Quality Products">
+                <h3>Quality Products</h3>
+                <p>We offer a wide range of high-quality groceries and household items</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png" alt="Fast Service">
+                <h3>Fast Service</h3>
+                <p>Quick and friendly service to save your valuable time</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1458/1458264.png" alt="Best Prices">
+                <h3>Best Prices</h3>
+                <p>Competitive prices for all your daily needs</p>
+            </div>
         </section>
 
         <section class="search-section">
             <h3>Search Our Products</h3>
-            <input type="text" id="search-input" placeholder="Enter product name...">
-            <button onclick="searchProducts()">Search</button>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Enter product name...">
+                <button onclick="searchProducts()">Search</button>
+            </div>
             <div id="search-results"></div>
+        </section>
+
+        <section class="quick-info">
+            <div class="info-card">
+                <h3>Opening Hours</h3>
+                <p>Every day: 06:00 AM - 08:00 PM</p>
+            </div>
+            <div class="info-card">
+                <h3>Location</h3>
+                <p>Mahendranagar-16, Jeetpur-Simara Sub-Metropolitan City</p>
+                <p>Bara, Nepal, 44400</p>
+            </div>
+            <div class="info-card">
+                <h3>Contact</h3>
+                <p>Phone: +977-9845410158</p>
+                <a href="https://maps.app.goo.gl/R3FqtS8UdxKdcJos6" target="_blank">View on Map</a>
+            </div>
         </section>
     </main>
 

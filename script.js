@@ -68,6 +68,7 @@ function searchProducts() {
         productDiv.innerHTML = `
             <h4>${product.name}</h4>
             <p>${product.description}</p>
+            <p style="color: green;">Good news! We have ${product.name} in stock.</p>
         `;
         resultsList.appendChild(productDiv);
     });
